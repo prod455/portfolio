@@ -52,20 +52,14 @@
 @media (max-width: 860px) { .pf-produto { grid-template-columns: 1fr; gap: var(--space-6); } .pf-dupla { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .pf-tiras { grid-template-columns: repeat(5, 46%); overflow-x: auto; scroll-snap-type: x mandatory; } .pf-tiras img { scroll-snap-align: start; } }
 
-/* Frentes */
-.pf-frentes { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); }
-.pf-frentes h3 { font-size: var(--font-size-xl); padding-bottom: var(--space-3); margin-bottom: var(--space-2); border-bottom: 2px solid var(--color-ink); }
-.pf-frentes ul { list-style: none; margin: 0; padding: 0; }
-.pf-frentes li { padding-block: var(--space-3); border-bottom: 1px solid var(--color-line); color: var(--color-ink-soft); }
-@media (max-width: 760px) { .pf-frentes { grid-template-columns: 1fr; gap: var(--space-8); } }
-
-/* Já fiz */
-.pf-servicos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
-.pf-servicos li { background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--radius-lg); padding: var(--space-5); }
-.pf-servicos h3 { font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-2); }
-.pf-servicos .apoio { font-size: var(--font-size-sm); }
-@media (max-width: 960px) { .pf-servicos { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 560px) { .pf-servicos { grid-template-columns: 1fr; } }
+/* Serviços */
+.pf-grupos { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-10) var(--space-8); }
+.pf-grupo h3 { font-size: var(--font-size-xl); font-weight: var(--font-weight-heavy); padding-bottom: var(--space-3); border-bottom: 2px solid var(--color-ink); }
+.pf-grupo ul { list-style: none; margin: 0; padding: 0; }
+.pf-grupo li { padding-block: var(--space-4); border-bottom: 1px solid var(--color-line); }
+.pf-grupo h4 { margin: 0 0 var(--space-1); font-size: var(--font-size-md); font-weight: var(--font-weight-semibold); color: var(--color-ink); }
+.pf-grupo .apoio { font-size: var(--font-size-sm); }
+@media (max-width: 760px) { .pf-grupos { grid-template-columns: 1fr; gap: var(--space-8); } }
 
 /* Passos */
 .pf-passos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); counter-reset: passo; }
