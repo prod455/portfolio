@@ -77,11 +77,12 @@ section p.sub { color: var(--muted); margin: 0 0 30px; max-width: 40em; }
 .destaque .artes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .destaque .artes img { border-radius: 10px; aspect-ratio: 9/16; object-fit: cover; }
 .galeria { margin-top: 16px; }
-.galeria-grid { display: grid; gap: 12px; grid-template-columns: repeat(5, 1fr); margin-top: 14px; }
+.galeria-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); margin-top: 14px; }
 .galeria-grid figure { margin: 0; }
+.par > div { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .galeria-grid img { border-radius: 10px; aspect-ratio: 9/16; object-fit: cover; width: 100%; }
-.galeria-grid figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; text-align: center; }
-@media (max-width: 560px) { .galeria-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; } .galeria-grid figcaption { font-size: 12px; } }
+.galeria-grid figcaption { margin-top: 8px; display: flex; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--muted); }
+.galeria-grid figcaption b { color: var(--fg); font-weight: 600; }
 .servicos li { margin-bottom: 10px; }
 .servicos { columns: 2 280px; column-gap: 32px; padding-left: 18px; color: var(--fg); }
 .linha { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
@@ -153,13 +154,28 @@ footer { color: var(--muted); font-size: 14px; padding: 24px 0 40px; border-top:
 
       <div class="card galeria">
         <h3>Os 5 modelos de arte pronta</h3>
-        <p>A loja escolhe o modelo, troca a foto e os textos e recebe o feed e o Story.</p>
+        <p>À esquerda, o modelo sem produto. À direita, a mesma arte com a foto, o nome e o preço da loja.</p>
         <div class="galeria-grid">
-          <figure><img src="img/temos-natural.webp" width="450" height="800" alt="Arte do modelo Temos, Natural" loading="lazy"><figcaption>Temos · Natural</figcaption></figure>
-          <figure><img src="img/fornada-rustica.webp" width="450" height="800" alt="Arte do modelo Fornada, Rústica" loading="lazy"><figcaption>Fornada · Rústica</figcaption></figure>
-          <figure><img src="img/oferta-duas-colunas.webp" width="450" height="800" alt="Arte do modelo Oferta, Duas colunas" loading="lazy"><figcaption>Oferta · Duas colunas</figcaption></figure>
-          <figure><img src="img/destaque-preco.webp" width="450" height="800" alt="Arte do modelo Destaque, Preço" loading="lazy"><figcaption>Destaque · Preço</figcaption></figure>
-          <figure><img src="img/servico-encomendas.webp" width="450" height="800" alt="Arte do modelo Serviço, Encomendas" loading="lazy"><figcaption>Serviço · Encomendas</figcaption></figure>
+          <figure class="par">
+            <div><img src="img/vazio/temos-natural.webp" width="450" height="800" alt="Modelo Temos, Natural sem produto" loading="lazy"><img src="img/temos-natural.webp" width="450" height="800" alt="Modelo Temos, Natural com o produto da loja" loading="lazy"></div>
+            <figcaption><b>Temos · Natural</b><span>Modelo · Com produto</span></figcaption>
+          </figure>
+          <figure class="par">
+            <div><img src="img/vazio/fornada-rustica.webp" width="450" height="800" alt="Modelo Fornada, Rústica sem produto" loading="lazy"><img src="img/fornada-rustica.webp" width="450" height="800" alt="Modelo Fornada, Rústica com o produto da loja" loading="lazy"></div>
+            <figcaption><b>Fornada · Rústica</b><span>Modelo · Com produto</span></figcaption>
+          </figure>
+          <figure class="par">
+            <div><img src="img/vazio/oferta-duas-colunas.webp" width="450" height="800" alt="Modelo Oferta, Duas colunas sem produto" loading="lazy"><img src="img/oferta-duas-colunas.webp" width="450" height="800" alt="Modelo Oferta, Duas colunas com o produto da loja" loading="lazy"></div>
+            <figcaption><b>Oferta · Duas colunas</b><span>Modelo · Com produto</span></figcaption>
+          </figure>
+          <figure class="par">
+            <div><img src="img/vazio/destaque-preco.webp" width="450" height="800" alt="Modelo Destaque, Preço sem produto" loading="lazy"><img src="img/destaque-preco.webp" width="450" height="800" alt="Modelo Destaque, Preço com o produto da loja" loading="lazy"></div>
+            <figcaption><b>Destaque · Preço</b><span>Modelo · Com produto</span></figcaption>
+          </figure>
+          <figure class="par">
+            <div><img src="img/vazio/servico-encomendas.webp" width="450" height="800" alt="Modelo Serviço, Encomendas sem produto" loading="lazy"><img src="img/servico-encomendas.webp" width="450" height="800" alt="Modelo Serviço, Encomendas com o produto da loja" loading="lazy"></div>
+            <figcaption><b>Serviço · Encomendas</b><span>Modelo · Com produto</span></figcaption>
+          </figure>
         </div>
       </div>
       <div class="grid grid-2" style="margin-top:16px">
