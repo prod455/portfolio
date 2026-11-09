@@ -9,10 +9,10 @@ conta=0b8babe977ef3fc27badc2c00323d334
 tmp="$(mktemp -d)"; trap 'rm -rf "$tmp"' EXIT
 python3 - "$tmp/_worker.js" <<'PY'
 import base64, json, os, sys
-tipos = {".html": "text/html; charset=utf-8", ".webp": "image/webp", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml"}
+tipos = {".html": "text/html; charset=utf-8", ".webp": "image/webp", ".png": "image/png", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml"}
 arquivos = {}
 imagens = sorted(os.path.join(r, f) for r, _, fs in os.walk("img") for f in fs)
-for nome in ["index.html", "robots.txt", "sitemap.xml"] + imagens:
+for nome in ["index.html", "robots.txt", "sitemap.xml", "favicon.png", "apple-touch-icon.png"] + imagens:
     arquivos["/" + nome] = [tipos[os.path.splitext(nome)[1]], base64.b64encode(open(nome, "rb").read()).decode()]
 arquivos["/"] = arquivos["/index.html"]
 js = """const F=%s;
