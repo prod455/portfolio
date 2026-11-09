@@ -11,7 +11,8 @@ python3 - "$tmp/_worker.js" <<'PY'
 import base64, json, os, sys
 tipos = {".html": "text/html; charset=utf-8", ".webp": "image/webp", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml"}
 arquivos = {}
-for nome in ["index.html", "robots.txt", "sitemap.xml"] + ["img/" + f for f in sorted(os.listdir("img"))]:
+imagens = sorted(os.path.join(r, f) for r, _, fs in os.walk("img") for f in fs)
+for nome in ["index.html", "robots.txt", "sitemap.xml"] + imagens:
     arquivos["/" + nome] = [tipos[os.path.splitext(nome)[1]], base64.b64encode(open(nome, "rb").read()).decode()]
 arquivos["/"] = arquivos["/index.html"]
 js = """const F=%s;

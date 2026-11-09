@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Paulo Rodrigues · Desenvolvedor full stack em Goiânia">
 <meta property="og:description" content="Software para comércio local vender mais e perder menos tempo com tarefa repetida.">
-<meta property="og:image" content="https://prod455.pages.dev/img/produto-em-destaque.webp">
+<meta property="og:image" content="https://prod455.pages.dev/img/hero-pausa.webp">
 <meta property="og:locale" content="pt_BR">
 <meta name="theme-color" content="#0f1720">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1720'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%2334d399' text-anchor='middle'%3EPR%3C/text%3E%3C/svg%3E">
@@ -75,6 +75,12 @@ section p.sub { color: var(--muted); margin: 0 0 30px; max-width: 40em; }
 @media (max-width: 860px) { .destaque { grid-template-columns: 1fr; } }
 .destaque .artes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .destaque .artes img { border-radius: 10px; aspect-ratio: 9/16; object-fit: cover; }
+.galeria { margin-top: 16px; }
+.galeria-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); margin-top: 14px; }
+.galeria-grid figure { margin: 0; }
+.galeria-grid img { border-radius: 10px; aspect-ratio: 9/16; object-fit: cover; width: 100%; }
+.galeria-grid figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; text-align: center; }
+@media (max-width: 560px) { .galeria-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; } .galeria-grid figcaption { font-size: 12px; } }
 .servicos li { margin-bottom: 10px; }
 .servicos { columns: 2 280px; column-gap: 32px; padding-left: 18px; color: var(--fg); }
 .linha { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
@@ -111,11 +117,11 @@ footer { color: var(--muted); font-size: 14px; padding: 24px 0 40px; border-top:
           <a class="btn ghost" href="#projetos">Ver projetos</a>
         </div>
       </div>
-      <figure class="vitrine-fig"><div class="vitrine" aria-label="Modelos de Story do Draftmoor">
-        <img src="img/produto-em-destaque.webp" width="540" height="960" alt="Modelo do Draftmoor: produto em destaque">
-        <img src="img/objeto-encontrado.webp" width="540" height="960" alt="Modelo do Draftmoor: achados e perdidos">
-        <img src="img/encomendas.webp" width="540" height="960" alt="Modelo do Draftmoor: por encomenda">
-      </div><figcaption>Modelos de Story do Draftmoor.</figcaption></figure>
+      <figure class="vitrine-fig"><div class="vitrine" aria-label="Stories feitos no Draftmoor">
+        <img src="img/hero-bauru.webp" width="540" height="960" alt="Story do Draftmoor: destaque da loja, pão Bauru">
+        <img src="img/hero-pausa.webp" width="540" height="960" alt="Story do Draftmoor: Entre uma tarefa e outra, uma pausa com Trento">
+        <img src="img/hero-bacon.webp" width="540" height="960" alt="Story do Draftmoor: oferta do dia, bacon cozido">
+      </div><figcaption>Stories feitos no Draftmoor.</figcaption></figure>
     </div>
 
     <section id="projetos">
@@ -137,11 +143,38 @@ footer { color: var(--muted); font-size: 14px; padding: 24px 0 40px; border-top:
           <p style="margin-top:14px"><a class="link" href="https://draftmoor.online/" rel="noopener">Conhecer o Draftmoor →</a></p>
         </div>
         <div class="artes">
-          <img src="img/oferta-duas-colunas.webp" width="540" height="960" alt="Modelo do Draftmoor: oferta em duas colunas" loading="lazy">
-          <img src="img/da-padaria.webp" width="540" height="960" alt="Modelo do Draftmoor: da padaria" loading="lazy">
+          <img src="img/draftmoor-carinho.webp" width="540" height="960" alt="Story do Draftmoor: Lembrei de você" loading="lazy">
+          <img src="img/draftmoor-fornada.webp" width="540" height="960" alt="Story do Draftmoor: pão francês fresquinho" loading="lazy">
         </div>
       </div>
 
+
+      <div class="card galeria">
+        <h3>Os 20 modelos de arte do Draftmoor</h3>
+        <p>Cada um com produto de verdade, no formato Story. O feed sai junto, no mesmo modelo.</p>
+        <div class="galeria-grid">
+          <figure><img src="img/modelos/preco-em-destaque.webp" width="360" height="640" alt="Modelo Preço em destaque do Draftmoor" loading="lazy"><figcaption>Preço em destaque</figcaption></figure>
+          <figure><img src="img/modelos/destaque-da-loja.webp" width="360" height="640" alt="Modelo Destaque da loja do Draftmoor" loading="lazy"><figcaption>Destaque da loja</figcaption></figure>
+          <figure><img src="img/modelos/oferta-do-dia.webp" width="360" height="640" alt="Modelo Oferta do dia do Draftmoor" loading="lazy"><figcaption>Oferta do dia</figcaption></figure>
+          <figure><img src="img/modelos/oferta-da-loja.webp" width="360" height="640" alt="Modelo Oferta da loja do Draftmoor" loading="lazy"><figcaption>Oferta da loja</figcaption></figure>
+          <figure><img src="img/modelos/natural.webp" width="360" height="640" alt="Modelo Natural do Draftmoor" loading="lazy"><figcaption>Natural</figcaption></figure>
+          <figure><img src="img/modelos/rustico.webp" width="360" height="640" alt="Modelo Rústico do Draftmoor" loading="lazy"><figcaption>Rústico</figcaption></figure>
+          <figure><img src="img/modelos/encomendas.webp" width="360" height="640" alt="Modelo Encomendas do Draftmoor" loading="lazy"><figcaption>Encomendas</figcaption></figure>
+          <figure><img src="img/modelos/achados-e-perdidos.webp" width="360" height="640" alt="Modelo Achados e perdidos do Draftmoor" loading="lazy"><figcaption>Achados e perdidos</figcaption></figure>
+          <figure><img src="img/modelos/cartao-de-preco.webp" width="360" height="640" alt="Modelo Cartão de preço do Draftmoor" loading="lazy"><figcaption>Cartão de preço</figcaption></figure>
+          <figure><img src="img/modelos/pao-frances.webp" width="360" height="640" alt="Modelo Fornada do Draftmoor" loading="lazy"><figcaption>Fornada</figcaption></figure>
+          <figure><img src="img/modelos/kit-festa.webp" width="360" height="640" alt="Modelo Kit festa do Draftmoor" loading="lazy"><figcaption>Kit festa</figcaption></figure>
+          <figure><img src="img/modelos/combo.webp" width="360" height="640" alt="Modelo Combo do Draftmoor" loading="lazy"><figcaption>Combo</figcaption></figure>
+          <figure><img src="img/modelos/dia-da-feira.webp" width="360" height="640" alt="Modelo Dia da feira do Draftmoor" loading="lazy"><figcaption>Dia da feira</figcaption></figure>
+          <figure><img src="img/modelos/temos-fresquinho.webp" width="360" height="640" alt="Modelo Fresquinho do Draftmoor" loading="lazy"><figcaption>Fresquinho</figcaption></figure>
+          <figure><img src="img/modelos/chegaram.webp" width="360" height="640" alt="Modelo Chegaram do Draftmoor" loading="lazy"><figcaption>Chegaram</figcaption></figure>
+          <figure><img src="img/modelos/leve-1-ganhe-1.webp" width="360" height="640" alt="Modelo Leve 1, ganhe +1 do Draftmoor" loading="lazy"><figcaption>Leve 1, ganhe +1</figcaption></figure>
+          <figure><img src="img/modelos/contraste.webp" width="360" height="640" alt="Modelo Contraste do Draftmoor" loading="lazy"><figcaption>Contraste</figcaption></figure>
+          <figure><img src="img/modelos/pausa.webp" width="360" height="640" alt="Modelo Pausa do Draftmoor" loading="lazy"><figcaption>Pausa</figcaption></figure>
+          <figure><img src="img/modelos/dividir.webp" width="360" height="640" alt="Modelo Dividir do Draftmoor" loading="lazy"><figcaption>Dividir</figcaption></figure>
+          <figure><img src="img/modelos/carinho.webp" width="360" height="640" alt="Modelo Carinho do Draftmoor" loading="lazy"><figcaption>Carinho</figcaption></figure>
+        </div>
+      </div>
       <div class="grid grid-2" style="margin-top:16px">
         <article class="card">
           <p class="quem">Imobiliárias e corretores</p>
