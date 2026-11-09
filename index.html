@@ -41,7 +41,7 @@
   <header class="pf-topo">
     <div class="wrap">
       <a class="wordmark" href="/" aria-label="Paulo Rodrigues, início">Paulo Rodrigues<span class="wordmark-dot" aria-hidden="true">.</span></a>
-      <nav aria-label="Seções"><a href="#produtos">Produtos</a><a href="#servicos">Serviços</a><a href="#carreira">Experiência</a><a href="#duvidas">Dúvidas</a></nav>
+      <nav aria-label="Seções"><a href="#produtos">Produtos</a><a href="#servicos">Serviços</a><a href="#open-source">Open-source</a><a href="#duvidas">Dúvidas</a></nav>
       <a class="btn" data-variant="outline" href="https://wa.me/5562998720156?text=Ol%C3%A1%2C%20Paulo.%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto." rel="noopener">WhatsApp</a>
     </div>
   </header>
@@ -120,12 +120,17 @@
     </section>
 
 
-    <section class="pf-secao" id="carreira" aria-labelledby="h-carreira">
+    <section class="pf-secao" id="open-source" aria-labelledby="h-open-source">
       <div class="wrap">
-        <div class="pf-cabeca"><h2 id="h-carreira">Experiência</h2><p class="apoio">Antes dos meus produtos, trabalhei com CSharp.</p></div>
-        <ol class="pf-tempo">
-          <li><span class="meta">CSharp</span><p><b>Login único (SSO) e integrações de exportação de dados.</b></p></li>
-        </ol>
+        <div class="pf-cabeca"><h2 id="h-open-source">Open-source</h2><p class="apoio">Código que tirei dos meus sistemas e deixei aberto.</p></div>
+        <ul class="pf-libs">
+          <li><a class="text-link" href="https://github.com/prod455/framechester" rel="noopener"><b>framechester</b></a><p class="apoio">motor self-hosted de produção e análise de mídia.</p></li>
+          <li><a class="text-link" href="https://github.com/prod455/reelster" rel="noopener"><b>reelster</b></a><p class="apoio">extraia vídeos de reels recebidos e enviados de uma DM selecionada.</p></li>
+          <li><a class="text-link" href="https://github.com/prod455/br" rel="noopener"><b>br</b></a><p class="apoio">CPF, CNPJ, Pix (chave e copia e cola), telefone, WhatsApp e reais, em TypeScript e Zig, com os mesmos testes nos dois.</p></li>
+          <li><a class="text-link" href="https://github.com/prod455/meta" rel="noopener"><b>meta</b></a><p class="apoio">Graph API, login e webhook da Meta (Instagram, Facebook, WhatsApp) para Node e Workers, sem dependências e sem token na URL.</p></li>
+          <li><a class="text-link" href="https://github.com/prod455/entrar" rel="noopener"><b>entrar</b></a><p class="apoio">Entrar com Google em Zig (0.16 e 0.17), sem rede e sem banco: monta a URL e o pedido do token e confere o id_token.</p></li>
+          <li><a class="text-link" href="https://github.com/prod455/httpz" rel="noopener"><b>httpz</b></a><p class="apoio">o servidor HTTP em Zig (http.zig) com as correções de travamento e de queda que o upstream ainda não tem, usado pelo Draftmoor.</p></li>
+        </ul>
       </div>
     </section>
 
