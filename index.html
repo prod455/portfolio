@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paulo Rodrigues · Desenvolvedor full stack em Goiânia</title>
+<meta name="description" content="Desenvolvedor full stack em Goiânia. Sites, lojas com pedido pelo WhatsApp e Pix, arte automática de oferta, automações e integrações para comércio local.">
+<link rel="canonical" href="https://PREENCHER_DOMINIO/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Paulo Rodrigues · Desenvolvedor full stack em Goiânia">
+<meta property="og:description" content="Software para comércio local vender mais e perder menos tempo com tarefa repetida.">
+<meta property="og:image" content="https://PREENCHER_DOMINIO/img/pausa.webp">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0f1720">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1720'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%2334d399' text-anchor='middle'%3EPR%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Paulo Rodrigues",
+  "jobTitle": "Desenvolvedor full stack",
+  "url": "https://PREENCHER_DOMINIO/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Goiânia", "addressRegion": "GO", "addressCountry": "BR" },
+  "sameAs": ["https://github.com/prod455"],
+  "knowsAbout": ["Zig", "TypeScript", "C#", ".NET", "Python", "Rust", "PostgreSQL", "Cloudflare Workers", "WhatsApp", "Pix"]
+}
+</script>
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #15191e; --muted: #5b6470; --line: #e6e2da; --card: #ffffff;
+  --accent: #0f7a55; --accent-fg: #ffffff; --soft: #eef6f1;
+  --radius: 14px; --max: 1080px;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1720; --fg: #eef1f4; --muted: #9aa4b1; --line: #233040; --card: #151f2b; --accent: #34d399; --accent-fg: #06281b; --soft: #13261f; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
+header.top { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+header.top b { font-size: 16px; letter-spacing: .2px; }
+header.top nav a { margin-left: 18px; color: var(--muted); text-decoration: none; font-size: 15px; }
+header.top nav a:hover { color: var(--fg); }
+@media (max-width: 640px) { header.top nav a:not(.cta-mini) { display: none; } }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 20px; border-radius: 999px; background: var(--accent); color: var(--accent-fg); text-decoration: none; font-weight: 650; border: 0; }
+.btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+.btn:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.hero { padding: 48px 0 56px; display: grid; gap: 40px; grid-template-columns: 1.2fr 1fr; align-items: center; }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; padding-top: 24px; } }
+.hero h1 { font-size: clamp(32px, 5.4vw, 54px); line-height: 1.08; margin: 0 0 18px; letter-spacing: -.8px; }
+.hero p.lead { font-size: 19px; color: var(--muted); margin: 0 0 26px; max-width: 34em; }
+.hero .acoes { display: flex; flex-wrap: wrap; gap: 12px; }
+.tag { display: inline-block; font-size: 13px; color: var(--accent); background: var(--soft); padding: 4px 10px; border-radius: 999px; margin-bottom: 16px; font-weight: 600; }
+.vitrine { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.vitrine img { border-radius: 12px; aspect-ratio: 9/16; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+.vitrine img:nth-child(2) { transform: translateY(-18px); }
+.vitrine-fig { margin: 0; }
+.vitrine-fig figcaption { font-size: 13px; color: var(--muted); margin-top: 12px; text-align: center; }
+section { padding: 56px 0; border-top: 1px solid var(--line); }
+section h2 { font-size: clamp(24px, 3.4vw, 34px); margin: 0 0 8px; letter-spacing: -.4px; }
+section p.sub { color: var(--muted); margin: 0 0 30px; max-width: 40em; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
+.grid-2 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+.card h3 { margin: 0 0 6px; font-size: 19px; }
+.card .quem { font-size: 14px; color: var(--accent); font-weight: 600; margin: 0 0 10px; }
+.card p { margin: 0 0 12px; color: var(--muted); }
+.card ul { margin: 0 0 14px; padding-left: 18px; color: var(--muted); }
+.card .stack { font-size: 13px; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 10px; margin: 0; }
+.card a.link { font-weight: 600; color: var(--accent); text-decoration: none; }
+.destaque { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
+@media (max-width: 860px) { .destaque { grid-template-columns: 1fr; } }
+.destaque .artes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.destaque .artes img { border-radius: 10px; aspect-ratio: 9/16; object-fit: cover; }
+.servicos li { margin-bottom: 10px; }
+.servicos { columns: 2 280px; column-gap: 32px; padding-left: 18px; color: var(--fg); }
+.linha { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.linha span { color: var(--muted); font-size: 15px; }
+@media (max-width: 560px) { .linha { grid-template-columns: 1fr; gap: 2px; } }
+.libs a { text-decoration: none; }
+.libs code { font-size: 15px; font-weight: 700; color: var(--fg); }
+.contato { text-align: center; padding: 64px 0 72px; }
+.contato h2 { margin-bottom: 10px; }
+.contato .acoes { justify-content: center; display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+footer { color: var(--muted); font-size: 14px; padding: 24px 0 40px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>Paulo Rodrigues</b>
+    <nav>
+      <a href="#projetos">Projetos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#carreira">Carreira</a>
+      <a class="cta-mini" href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <span class="tag">Desenvolvedor full stack · Goiânia</span>
+        <h1>Software que faz o comércio local vender mais e perder menos tempo.</h1>
+        <p class="lead">Faço site, loja com pedido pelo WhatsApp e Pix, arte de oferta automática, integração com Instagram e WhatsApp e a automação daquela tarefa que alguém repete todo dia. Do começo ao fim, no ar.</p>
+        <div class="acoes">
+          <a class="btn" href="https://wa.me/PREENCHER_WHATSAPP?text=Ol%C3%A1%2C%20Paulo.%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto." rel="noopener">Conversar no WhatsApp</a>
+          <a class="btn ghost" href="#projetos">Ver projetos</a>
+        </div>
+      </div>
+      <figure class="vitrine-fig"><div class="vitrine" aria-label="Stories do Empório Maná feitos no Draftmoor">
+        <img src="img/contraste.webp" width="540" height="960" alt="Story do Empório Maná feito no Draftmoor: Trento Branco-Dark, comparação branco e dark">
+        <img src="img/pausa.webp" width="540" height="960" alt="Story do Empório Maná feito no Draftmoor: Entre uma tarefa e outra, uma pausa com Trento">
+        <img src="img/dividir.webp" width="540" height="960" alt="Story do Empório Maná feito no Draftmoor: 2 unidades, uma pra mim, uma pra você">
+      </div><figcaption>Stories do Empório Maná, feitos no Draftmoor.</figcaption></figure>
+    </div>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <p class="sub">Sistemas que eu criei e mantenho, do banco de dados ao celular de quem usa.</p>
+
+      <div class="destaque card">
+        <div>
+          <p class="quem">Produto próprio, no ar</p>
+          <h3>Draftmoor: da foto do produto ao post pronto</h3>
+          <p>A loja fotografa com o celular, o fundo sai sozinho e a arte fica pronta para o feed ou o Story, com logo, cores e preço. A legenda vem junto.</p>
+          <ul>
+            <li>Vitrine com endereço próprio: o cliente monta o pedido e manda pelo WhatsApp, com o Pix na tela.</li>
+            <li>Catálogo importado de planilha; horário, feriado e entrega sempre à vista.</li>
+            <li>Encarte, destaque, aviso, combo de 2 a 6 produtos e prateleira.</li>
+            <li>Conector para criar arte direto do Claude, pelo MCP.</li>
+          </ul>
+          <p class="stack">Zig · PostgreSQL · TypeScript · Chromium para desenhar · recorte de fundo com IA rodando no próprio servidor</p>
+          <p style="margin-top:14px"><a class="link" href="https://draftmoor.online/" rel="noopener">Conhecer o Draftmoor →</a></p>
+        </div>
+        <div class="artes">
+          <img src="img/carinho.webp" width="540" height="960" alt="Story do Empório Maná feito no Draftmoor: Lembrei de você" loading="lazy">
+          <img src="img/pausa.webp" width="540" height="960" alt="Story do Empório Maná feito no Draftmoor: Entre uma tarefa e outra" loading="lazy">
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:16px">
+        <article class="card">
+          <p class="quem">Imobiliárias e corretores</p>
+          <h3>Autocorret</h3>
+          <p>Cadastra o imóvel uma vez e publica em todos os canais: feed para ZAP Imóveis, Viva Real e OLX, API do Mercado Livre e site próprio com página por imóvel. Mudou o preço ou vendeu, os portais atualizam sozinhos.</p>
+          <p class="stack">Zig · PostgreSQL · React · login com Google · aviso por push · LGPD e Marco Civil</p>
+        </article>
+        <article class="card">
+          <p class="quem">Imobiliário, empório e encomendas</p>
+          <h3>CRM com IA e Meta</h3>
+          <p>Agente de IA que qualifica e pré-negocia leads, com WhatsApp Cloud API, Lead Ads, Instagram e Conversions API oficiais. Funil, campanhas com consentimento e agenda de entregas para quem produz sob encomenda.</p>
+          <p class="stack">TypeScript · Node.js · PostgreSQL · Claude · integrações oficiais da Meta</p>
+        </article>
+        <article class="card">
+          <p class="quem">Balcão: padaria, salão, pet shop</p>
+          <h3>Boardon: plaquinha NFC</h3>
+          <p>O cliente encosta o celular na plaquinha e abre Pix, Wi-Fi, avaliação no Google, Instagram e WhatsApp da loja. Editou no painel, já está no ar. O adesivo para a gráfica sai pronto.</p>
+          <p class="stack">TypeScript · Cloudflare Workers · D1</p>
+        </article>
+        <article class="card">
+          <p class="quem">Perfis pequenos que impulsionam posts</p>
+          <h3>Boostham</h3>
+          <p>Lê os resultados das campanhas da Meta e as novidades do Newsroom e manda, por e-mail, o que mudou e o que fazer com a verba baixa. Sem bot e sem seguidor comprado.</p>
+          <p class="stack">TypeScript · Cloudflare Workers · Graph API da Meta · Claude</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h2>O que eu faço sob medida</h2>
+      <p class="sub">Você explica o problema, eu entrego funcionando, com o código seu.</p>
+      <ul class="servicos">
+        <li>Landing page e site rápido, que aparece no Google</li>
+        <li>Loja online com pedido pelo WhatsApp e Pix</li>
+        <li>Arte automática de oferta a partir do catálogo</li>
+        <li>Integração com WhatsApp, Instagram e Facebook (APIs oficiais da Meta)</li>
+        <li>Automação de planilha, cadastro e tarefa repetida</li>
+        <li>Raspagem e organização de dados de sites</li>
+        <li>Extensão para Chrome</li>
+        <li>Bot de Telegram ou Discord</li>
+        <li>API e integração entre sistemas (ERP, banco, portal)</li>
+        <li>Login com Google, painel administrativo e relatório</li>
+      </ul>
+    </section>
+
+    <section id="carreira">
+      <h2>Carreira</h2>
+      <p class="sub">Comecei no front-end e fui para o back-end construindo APIs.</p>
+      <div class="linha"><span>Hoje</span><div><b>Produtos próprios e projetos sob medida.</b> Draftmoor, Autocorret, CRM com IA e plaquinhas NFC.</div></div>
+      <div class="linha"><span>C# e Vue</span><div><b>API de login único (SSO) e integrações de exportação de dados.</b></div></div>
+      <div class="linha"><span>Dados de ERP</span><div><b>Ferramenta de análise com drill-down.</b> Foi ali que vi de perto onde os sistemas travam.</div></div>
+      <div class="linha"><span>Primeiro emprego</span><div><b>Full stack com Angular, TypeScript e C#.</b></div></div>
+      <p style="margin-top:22px;color:var(--muted)">Zig · TypeScript · Node.js · C# / .NET · Python · Rust · PostgreSQL · Cloudflare Workers</p>
+    </section>
+
+    <section id="open-source">
+      <h2>Open-source</h2>
+      <p class="sub">Bibliotecas que saíram dos meus sistemas e qualquer um pode usar.</p>
+      <div class="grid libs">
+        <a class="card" href="https://github.com/prod455/br" rel="noopener"><code>br</code><p>CPF, CNPJ (inclusive o alfanumérico), chave Pix, Pix copia e cola, telefone, WhatsApp e reais, em TypeScript e Zig, com os mesmos testes nos dois.</p></a>
+        <a class="card" href="https://github.com/prod455/meta" rel="noopener"><code>meta</code><p>Graph API, login e webhook da Meta para Node e Workers, sem dependências e sem token na URL.</p></a>
+        <a class="card" href="https://github.com/prod455/entrar" rel="noopener"><code>entrar</code><p>Entrar com Google em Zig, seguro por padrão.</p></a>
+        <a class="card" href="https://github.com/prod455/httpz" rel="noopener"><code>httpz</code><p>Servidor HTTP em Zig com correções de travamento e de queda que o original ainda não tem.</p></a>
+        <a class="card" href="https://github.com/prod455/framechester" rel="noopener"><code>framechester</code><p>Motor self-hosted de produção e análise de mídia.</p></a>
+        <a class="card" href="https://github.com/prod455/reelster" rel="noopener"><code>reelster</code><p>Extrai os vídeos de reels recebidos e enviados numa conversa do Instagram.</p></a>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Tem um projeto em mente?</h2>
+      <p class="sub" style="margin:0 auto">Me conta o que você precisa e eu respondo com prazo e valor.</p>
+      <div class="acoes">
+        <a class="btn" href="https://wa.me/PREENCHER_WHATSAPP?text=Ol%C3%A1%2C%20Paulo.%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto." rel="noopener">Conversar no WhatsApp</a>
+        <a class="btn ghost" href="mailto:PREENCHER_EMAIL">PREENCHER_EMAIL</a>
+        <a class="btn ghost" href="https://github.com/prod455" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>Paulo Rodrigues · Goiânia, GO</footer>
+</div>
+</body>
+</html>
