@@ -1,0 +1,93 @@
+/* Layout do portfólio. Cores, tipos, espaços, raios e componentes (botão, acordeão, foco) vêm do
+   design system do Draftmoor em site.css; aqui só a composição própria da página. */
+.pf { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-family-sans); line-height: var(--font-leading-body); }
+.pf .wrap { width: min(100% - 32px, 1120px); margin-inline: auto; }
+.pf h1, .pf h2, .pf h3 { color: var(--color-ink); margin: 0; letter-spacing: var(--font-tracking-heading); line-height: var(--font-leading-tight); font-weight: var(--font-weight-semibold); }
+.pf p { margin: 0; }
+.pf .apoio { color: var(--color-ink-soft); }
+.pf .meta { color: var(--color-ink-muted); font-size: var(--font-size-sm); }
+
+/* Topo */
+.pf-topo { border-bottom: 1px solid var(--color-line); background: var(--color-paper); position: sticky; top: 0; z-index: var(--z-sticky); }
+.pf-topo .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: var(--size-header, 64px); }
+.pf-topo nav { display: flex; gap: var(--space-5); }
+.pf-topo nav a { color: var(--color-ink-soft); text-decoration: none; font-size: var(--font-size-sm); }
+.pf-topo nav a:hover { color: var(--color-ink); text-decoration: underline; }
+@media (max-width: 760px) { .pf-topo nav { display: none; } }
+
+/* Abertura: texto e cartão de visita */
+.pf-abertura { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--space-10); align-items: center; padding-block: var(--space-16) var(--space-12); }
+.pf-abertura h1 { font-size: clamp(36px, 5.4vw, 60px); font-weight: var(--font-weight-heavy); letter-spacing: var(--font-tracking-display); margin-bottom: var(--space-5); }
+.pf-abertura h1 span { box-shadow: inset 0 -0.32em 0 var(--color-accent); }
+.pf-abertura .apoio { font-size: var(--font-size-lg); max-width: 34em; margin-bottom: var(--space-8); }
+.pf-acoes { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.pf-cartao { background: var(--color-surface-raised); border: 1px solid var(--color-line); border-radius: var(--radius-xl); padding: var(--space-6); }
+.pf-cartao h2 { font-size: var(--font-size-xl); font-weight: var(--font-weight-heavy); }
+.pf-cartao .meta { margin-top: var(--space-1); }
+.pf-cartao dl { margin: var(--space-5) 0 0; display: grid; gap: 0; }
+.pf-cartao dl div { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: var(--space-3); padding-block: var(--space-3); border-top: 1px solid var(--color-line); }
+.pf-cartao dt { color: var(--color-ink-muted); font-size: var(--font-size-sm); }
+.pf-cartao dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.pf-cartao a { color: var(--color-brand); }
+@media (max-width: 860px) { .pf-abertura { grid-template-columns: minmax(0, 1fr); gap: var(--space-8); padding-block: var(--space-10) var(--space-10); } }
+
+/* Seções */
+.pf-secao { padding-block: var(--space-16); border-top: 1px solid var(--color-line); }
+.pf-cabeca { display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--space-6); align-items: end; margin-bottom: var(--space-10); }
+.pf-cabeca h2 { font-size: clamp(28px, 3.6vw, 40px); }
+.pf-cabeca .apoio { max-width: 36em; }
+@media (max-width: 760px) { .pf-cabeca { grid-template-columns: 1fr; gap: var(--space-3); margin-bottom: var(--space-8); } .pf-secao { padding-block: var(--space-12); } }
+
+/* Produtos */
+.pf-produtos { display: grid; gap: var(--space-5); }
+.pf-produto { background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--radius-xl); padding: var(--space-6); display: grid; grid-template-columns: 1fr 1.25fr; gap: var(--space-8); align-items: center; }
+.pf-produto.simples { grid-template-columns: 1fr; }
+.pf-produto h3 { font-size: var(--font-size-2xl); font-weight: var(--font-weight-heavy); margin-bottom: var(--space-3); }
+.pf-produto .apoio { margin-bottom: var(--space-5); }
+.pf-dupla { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); }
+.pf-tiras { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-2); }
+.pf-tiras img { width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--color-line); background: var(--color-paper-sunken); }
+.pf-selo { display: inline-flex; align-items: center; min-height: 26px; padding: 0 var(--space-3); border-radius: var(--radius-sm); font-size: var(--font-size-xs); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-3); border: 1px solid var(--color-line-strong); color: var(--color-ink-soft); }
+.pf-selo.no-ar { background: var(--color-success-bg, #e2f0e7); color: var(--color-success-fg, #17693a); border-color: transparent; }
+@media (max-width: 860px) { .pf-produto { grid-template-columns: 1fr; gap: var(--space-6); } .pf-dupla { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .pf-tiras { grid-template-columns: repeat(5, 46%); overflow-x: auto; scroll-snap-type: x mandatory; } .pf-tiras img { scroll-snap-align: start; } }
+
+/* Serviços */
+.pf-frentes { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); }
+.pf-frentes h3 { font-size: var(--font-size-xl); padding-bottom: var(--space-3); margin-bottom: var(--space-2); border-bottom: 2px solid var(--color-ink); }
+.pf-frentes ul { list-style: none; margin: 0; padding: 0; }
+.pf-frentes li { padding-block: var(--space-3); border-bottom: 1px solid var(--color-line); color: var(--color-ink-soft); }
+@media (max-width: 760px) { .pf-frentes { grid-template-columns: 1fr; gap: var(--space-8); } }
+
+/* Passos */
+.pf-passos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); counter-reset: passo; }
+.pf-passos li { counter-increment: passo; border-top: 2px solid var(--color-ink); padding-top: var(--space-4); }
+.pf-passos li::before { content: counter(passo, decimal-leading-zero); display: block; font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); color: var(--color-ink-muted); margin-bottom: var(--space-2); }
+.pf-passos strong { display: block; margin-bottom: var(--space-2); }
+.pf-passos span { color: var(--color-ink-soft); }
+@media (max-width: 860px) { .pf-passos { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .pf-passos { grid-template-columns: 1fr; } }
+
+/* Carreira */
+.pf-tempo { list-style: none; margin: 0; padding: 0; }
+.pf-tempo li { display: grid; grid-template-columns: 180px 1fr; gap: var(--space-5); padding-block: var(--space-4); border-top: 1px solid var(--color-line); }
+.pf-tempo li:last-child { border-bottom: 1px solid var(--color-line); }
+.pf-tempo b { font-weight: var(--font-weight-semibold); }
+@media (max-width: 560px) { .pf-tempo li { grid-template-columns: 1fr; gap: var(--space-1); } }
+
+/* Dúvidas */
+.pf-duvidas { display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--space-8); }
+.pf-duvidas details { border-bottom: 1px solid var(--color-line); }
+.pf-duvidas summary { padding-block: var(--space-4); font-weight: var(--font-weight-semibold); }
+.pf-duvidas details p { padding-bottom: var(--space-4); color: var(--color-ink-soft); }
+@media (max-width: 760px) { .pf-duvidas { grid-template-columns: 1fr; gap: var(--space-4); } }
+
+/* Contato */
+.pf-contato { background: var(--color-brand); color: var(--color-on-dark, #eef4f0); padding-block: var(--space-16); }
+.pf-contato h2 { color: inherit; font-size: clamp(30px, 4.4vw, 48px); font-weight: var(--font-weight-heavy); margin-bottom: var(--space-3); }
+.pf-contato p { color: var(--color-on-dark-soft, #dbe8e0); margin-bottom: var(--space-8); font-size: var(--font-size-lg); }
+.pf-contato .btn[data-variant="primary"] { background: var(--color-accent); color: var(--color-ink); }
+.pf-contato .btn[data-variant="outline"] { background: transparent; color: inherit; border-color: var(--color-on-dark-rule, #ffffff59); }
+.pf-rodape { padding-block: var(--space-6); color: var(--color-ink-muted); font-size: var(--font-size-sm); }
+.pf-rodape .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-3); }
+.pf-rodape a { color: inherit; margin-left: var(--space-4); }

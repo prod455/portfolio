@@ -9,10 +9,10 @@ conta=0b8babe977ef3fc27badc2c00323d334
 tmp="$(mktemp -d)"; trap 'rm -rf "$tmp"' EXIT
 python3 - "$tmp/_worker.js" <<'PY'
 import base64, json, os, sys
-tipos = {".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".woff2": "font/woff2", ".webp": "image/webp", ".png": "image/png", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml"}
+tipos = {".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".woff2": "font/woff2", ".webp": "image/webp", ".png": "image/png", ".jpg": "image/jpeg", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml"}
 arquivos = {}
 imagens = sorted(os.path.join(r, f) for d in ("img", "assets", "fonts") for r, _, fs in os.walk(d) for f in fs if not f.endswith(".txt"))
-for nome in ["index.html", "robots.txt", "sitemap.xml", "favicon.png", "apple-touch-icon.png"] + imagens:
+for nome in ["index.html", "robots.txt", "sitemap.xml", "favicon.png", "apple-touch-icon.png", "og.jpg"] + imagens:
     arquivos["/" + nome] = [tipos[os.path.splitext(nome)[1]], base64.b64encode(open(nome, "rb").read()).decode()]
 arquivos["/"] = arquivos["/index.html"]
 js = """const F=%s;

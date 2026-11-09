@@ -4,176 +4,168 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Paulo Rodrigues · Desenvolvedor full stack em Goiânia</title>
-  <meta name="description" content="Desenvolvedor full stack em Goiânia. Site, loja com pedido pelo WhatsApp e Pix, arte de oferta saindo do catálogo, automação e integração para o comércio local.">
-  <meta name="theme-color" content="#f7f7f4">
+  <meta name="description" content="Desenvolvedor full stack em Goiânia. Site, loja com pedido pelo WhatsApp e Pix, arte de oferta e automação para o comércio local.">
+  <meta name="theme-color" content="#f3f5f2">
   <link rel="canonical" href="https://prod455.pages.dev/">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="profile">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Paulo Rodrigues">
   <meta property="og:title" content="Paulo Rodrigues · Desenvolvedor full stack em Goiânia">
-  <meta property="og:description" content="Site, loja com pedido pelo WhatsApp e arte de oferta para o comércio local.">
+  <meta property="og:description" content="Site, loja com pedido pelo WhatsApp e Pix, arte de oferta e automação para o comércio local.">
   <meta property="og:url" content="https://prod455.pages.dev/">
-  <meta property="og:image" content="https://prod455.pages.dev/img/feed/oferta-duas-colunas.webp">
-  <meta property="og:image:alt" content="Arte de oferta em duas colunas feita no Draftmoor.">
+  <meta property="og:image" content="https://prod455.pages.dev/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Paulo Rodrigues, desenvolvedor full stack em Goiânia, com artes feitas no Draftmoor.">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
   <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/site.css">
-  <script type="module" src="assets/site.js"></script>
+  <link rel="stylesheet" href="assets/portfolio.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Paulo Rodrigues",
-    "jobTitle": "Desenvolvedor full stack",
-    "url": "https://prod455.pages.dev/",
-    "email": "mailto:contatodraftmoor@gmail.com",
-    "telephone": "+55 62 99872-0156",
-    "address": { "@type": "PostalAddress", "addressLocality": "Goiânia", "addressRegion": "GO", "addressCountry": "BR" },
-    "sameAs": ["https://github.com/prod455", "https://draftmoor.online/"],
-    "knowsAbout": ["Site", "Loja online", "WhatsApp", "Instagram", "Pix", "Automação"]
+    "@graph": [
+      { "@type": "WebSite", "@id": "https://prod455.pages.dev/#site", "url": "https://prod455.pages.dev/", "name": "Paulo Rodrigues", "inLanguage": "pt-BR" },
+      { "@type": "Person", "@id": "https://prod455.pages.dev/#paulo", "name": "Paulo Rodrigues", "jobTitle": "Desenvolvedor full stack", "url": "https://prod455.pages.dev/", "email": "mailto:contatodraftmoor@gmail.com", "telephone": "+55 62 99872-0156",
+        "address": { "@type": "PostalAddress", "addressLocality": "Goiânia", "addressRegion": "GO", "addressCountry": "BR" },
+        "sameAs": ["https://github.com/prod455"], "knowsAbout": ["Site", "Loja online", "WhatsApp", "Instagram", "Pix", "Automação"] }
+    ]
   }
   </script>
 </head>
-<body class="landing">
+<body class="pf">
   <a class="skip" href="#conteudo">Ir para o conteúdo</a>
-  <header class="top">
-    <div class="wrap top-row">
+  <header class="pf-topo">
+    <div class="wrap">
       <a class="wordmark" href="/" aria-label="Paulo Rodrigues, início">Paulo Rodrigues<span class="wordmark-dot" aria-hidden="true">.</span></a>
-      <nav class="top-nav" aria-label="Atalhos">
-        <a class="top-link" href="#modelos">Draftmoor</a><a class="top-link" href="#projetos">Projetos</a><a class="top-link" href="#como">Como trabalho</a><a class="top-link" href="#servicos">Serviços</a><a class="top-link" href="#carreira">Carreira</a><a class="top-link" href="#duvidas">Dúvidas</a>
-      </nav>
-      <a class="btn top-login" data-variant="outline" href="https://wa.me/5562998720156?text=Ol%C3%A1%2C%20Paulo.%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto." rel="noopener">WhatsApp</a>
+      <nav aria-label="Seções"><a href="#produtos">Produtos</a><a href="#servicos">Serviços</a><a href="#como">Como trabalho</a><a href="#carreira">Carreira</a><a href="#duvidas">Dúvidas</a></nav>
+      <a class="btn" data-variant="outline" href="https://wa.me/5562998720156?text=Ol%C3%A1%2C%20Paulo.%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto." rel="noopener">WhatsApp</a>
     </div>
   </header>
+
   <main id="conteudo">
-    <section class="hero wrap" aria-labelledby="h-hero">
-      <div class="hero-text">
-        <h1 id="h-hero">Sistemas que fazem a sua loja vender mais.</h1>
-        <p class="lead">Faço site, loja com pedido pelo WhatsApp e Pix e arte de oferta que sai direto do catálogo. Também ligo o Instagram e o WhatsApp ao seu sistema e automatizo a tarefa que alguém da loja ainda faz na mão.</p>
-        <div class="cta-row">
+    <div class="wrap pf-abertura">
+      <div>
+        <h1>Sistemas para o comércio local <span>vender mais</span>.</h1>
+        <p class="apoio">Sou desenvolvedor full stack em Goiânia. Faço site, loja com pedido pelo WhatsApp e Pix e arte de oferta que sai do catálogo, e automatizo a tarefa que alguém da loja ainda faz na mão todo dia.</p>
+        <div class="pf-acoes">
           <a class="btn" data-variant="primary" href="https://wa.me/5562998720156?text=Ol%C3%A1%2C%20Paulo.%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto." rel="noopener">Conversar no WhatsApp</a>
-          <a class="btn" data-variant="outline" href="#projetos">Ver projetos</a>
+          <a class="btn" data-variant="outline" href="#produtos">Ver produtos</a>
         </div>
-        <p class="access-note small">Desenvolvedor full stack em Goiânia. Respondo com prazo e valor.</p>
       </div>
-      <figure class="hero-art">
-        <div class="hero-prints">
-          <img class="art art-feed" src="img/feed/oferta-duas-colunas.webp" width="720" height="900" fetchpriority="high" alt="Oferta em duas colunas feita no Draftmoor, com Gatorade laranja e preço.">
-          <img class="art art-story" src="img/story/temos-natural.webp" width="450" height="800" alt="Arte Temos, Natural, em Story, com abobrinha.">
-        </div>
-        <figcaption>Artes feitas no Draftmoor, o meu produto. Fotos e preços de demonstração.</figcaption>
-      </figure>
-      <div class="hero-proof">
-        <p class="small">Para mercados, empórios, padarias e lojas de bairro.</p>
-        <div class="proof-customer"><span class="small">Quem já usa</span><ul class="proof-logos"><li><img src="img/emporio-mana-logo.webp" width="292" height="139" alt="Empório Maná, mercado em Goiânia"></li></ul></div>
-      </div>
-    </section>
+      <aside class="pf-cartao" aria-labelledby="h-cartao">
+        <h2 id="h-cartao">Paulo Rodrigues</h2>
+        <p class="meta">Desenvolvedor full stack</p>
+        <dl>
+          <div><dt>Cidade</dt><dd>Goiânia, GO</dd></div>
+          <div><dt>Faço</dt><dd>Vender, integrar e automatizar</dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5562998720156?text=Ol%C3%A1%2C%20Paulo.%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto." rel="noopener">(62) 99872-0156</a></dd></div>
+          <div><dt>E-mail</dt><dd><a href="mailto:contatodraftmoor@gmail.com">contatodraftmoor@gmail.com</a></dd></div>
+          <div><dt>Código</dt><dd><a href="https://github.com/prod455" rel="noopener">github.com/prod455</a></dd></div>
+        </dl>
+      </aside>
+    </div>
 
-    <section class="models" id="modelos" aria-labelledby="h-modelos">
+    <section class="pf-secao" id="produtos" aria-labelledby="h-produtos">
       <div class="wrap">
-        <div class="section-heading"><h2 id="h-modelos">Draftmoor: a foto do produto vira post.</h2><p>A loja tira a foto com o celular, o Draftmoor recorta o fundo e monta o feed e o Story com o logo, as cores e o preço dela. Estes são os 5 modelos de arte pronta.</p></div>
-        <div class="gallery-toolbar" data-model-controls hidden>
-          <div class="gallery-filters" role="group" aria-label="Mostrar"><button class="btn" data-variant="primary" data-model-kind="com" aria-pressed="true" type="button">Com produto</button><button class="btn" data-variant="outline" data-model-kind="sem" aria-pressed="false" type="button">Sem produto</button></div>
-          <div class="gallery-view" role="group" aria-label="Formato da prévia" data-format-group><button class="btn" data-variant="primary" data-gallery-format="feed" aria-pressed="true" type="button">Feed</button><button class="btn" data-variant="outline" data-gallery-format="story" aria-pressed="false" type="button">Story</button></div>
+        <div class="pf-cabeca"><h2 id="h-produtos">Produtos</h2><p class="apoio">Faço e mantenho cada um. Os detalhes de cada produto ficam na página dele.</p></div>
+        <div class="pf-produtos">
+          <article class="pf-produto">
+            <div>
+              <span class="pf-selo no-ar">No ar</span>
+              <h3>Draftmoor</h3>
+              <p class="apoio">A loja tira a foto do produto com o celular e recebe a arte do feed e do Story com a marca e o preço dela, além de uma vitrine onde o cliente manda o pedido pelo WhatsApp.</p>
+              <a class="btn" data-variant="primary" href="https://draftmoor.online/" rel="noopener">Ver a página do Draftmoor</a>
+            </div>
+            <div class="pf-tiras" aria-label="Os 5 modelos de arte pronta do Draftmoor">
+              <img src="img/story/temos-natural.webp" width="450" height="800" loading="lazy" decoding="async" alt="Arte do modelo Temos, Natural em Story, com abobrinha.">
+              <img src="img/story/fornada-rustica.webp" width="450" height="800" loading="lazy" decoding="async" alt="Arte do modelo Fornada, Rústica em Story, com café.">
+              <img src="img/story/oferta-duas-colunas.webp" width="450" height="800" loading="lazy" decoding="async" alt="Arte do modelo Oferta, Duas colunas em Story, com Gatorade laranja.">
+              <img src="img/story/destaque-preco.webp" width="450" height="800" loading="lazy" decoding="async" alt="Arte do modelo Destaque, Preço em Story, com Doritos.">
+              <img src="img/story/servico-encomendas.webp" width="450" height="800" loading="lazy" decoding="async" alt="Arte do modelo Serviço, Encomendas em Story, com hortifruti.">
+            </div>
+          </article>
+          <div class="pf-dupla">
+            <article class="pf-produto simples">
+              <div>
+                <span class="pf-selo">Página em breve</span>
+                <h3>Boardon</h3>
+                <p class="apoio">Plaquinha com QR Code no balcão. O cliente aponta a câmera e abre o Pix, o Wi-Fi, a avaliação no Google, o Instagram e o WhatsApp da loja.</p>
+              </div>
+            </article>
+            <article class="pf-produto simples">
+              <div>
+                <span class="pf-selo">Página em breve</span>
+                <h3>Boostham</h3>
+                <p class="apoio">Para quem impulsiona post com pouca verba: lê o resultado das campanhas na Meta e manda por e-mail o que mudou e onde vale pôr o dinheiro.</p>
+              </div>
+            </article>
+          </div>
         </div>
-        <p class="gallery-status small" data-model-count aria-live="polite" aria-atomic="true">5 modelos de arte pronta, em feed, Story e vazio.</p>
-        <div class="model-gallery" data-model-gallery data-gallery-view="feed">
-          <figure class="model-card" data-model-id="temos-natural">
-            <a class="model-frame" data-model-preview href="img/feed/temos-natural.webp" target="_blank" rel="noopener" aria-label="Ampliar Temos · Natural">
-              <img src="img/feed/temos-natural.webp" width="720" height="900" loading="lazy" decoding="async" alt="Arte Temos · Natural em feed, com abobrinha.">
-            </a>
-            <figcaption>
-              <h3>Temos · Natural</h3><p>O nome do produto em destaque, a foto grande e uma frase de apoio.</p>
-              <div class="model-meta"><span>Arte pronta</span><div class="model-formats"><a data-model-feed data-width="720" data-height="900" data-alt="Arte Temos · Natural em feed, com abobrinha." href="img/feed/temos-natural.webp" target="_blank" rel="noopener">Feed</a><a data-model-story data-width="450" data-height="800" data-alt="Arte Temos · Natural em Story, com abobrinha." href="img/story/temos-natural.webp" target="_blank" rel="noopener">Story</a><a data-model-empty data-width="450" data-height="800" data-alt="Modelo Temos · Natural vazio, sem produto." href="img/vazio/temos-natural.webp" target="_blank" rel="noopener">Vazio</a></div></div>
-            </figcaption>
-          </figure>
-          <figure class="model-card" data-model-id="fornada-rustica">
-            <a class="model-frame" data-model-preview href="img/feed/fornada-rustica.webp" target="_blank" rel="noopener" aria-label="Ampliar Fornada · Rústica">
-              <img src="img/feed/fornada-rustica.webp" width="720" height="900" loading="lazy" decoding="async" alt="Arte Fornada · Rústica em feed, com café Três Ranchos.">
-            </a>
-            <figcaption>
-              <h3>Fornada · Rústica</h3><p>Cena quente de balcão para padaria, empório e produto caseiro.</p>
-              <div class="model-meta"><span>Arte pronta</span><div class="model-formats"><a data-model-feed data-width="720" data-height="900" data-alt="Arte Fornada · Rústica em feed, com café Três Ranchos." href="img/feed/fornada-rustica.webp" target="_blank" rel="noopener">Feed</a><a data-model-story data-width="450" data-height="800" data-alt="Arte Fornada · Rústica em Story, com café Três Ranchos." href="img/story/fornada-rustica.webp" target="_blank" rel="noopener">Story</a><a data-model-empty data-width="450" data-height="800" data-alt="Modelo Fornada · Rústica vazio, sem produto." href="img/vazio/fornada-rustica.webp" target="_blank" rel="noopener">Vazio</a></div></div>
-            </figcaption>
-          </figure>
-          <figure class="model-card" data-model-id="oferta-duas-colunas">
-            <a class="model-frame" data-model-preview href="img/feed/oferta-duas-colunas.webp" target="_blank" rel="noopener" aria-label="Ampliar Oferta · Duas colunas">
-              <img src="img/feed/oferta-duas-colunas.webp" width="720" height="900" loading="lazy" decoding="async" alt="Arte Oferta · Duas colunas em feed, com Gatorade laranja.">
-            </a>
-            <figcaption>
-              <h3>Oferta · Duas colunas</h3><p>Nome e preço à esquerda, produto grande à direita.</p>
-              <div class="model-meta"><span>Arte pronta</span><div class="model-formats"><a data-model-feed data-width="720" data-height="900" data-alt="Arte Oferta · Duas colunas em feed, com Gatorade laranja." href="img/feed/oferta-duas-colunas.webp" target="_blank" rel="noopener">Feed</a><a data-model-story data-width="450" data-height="800" data-alt="Arte Oferta · Duas colunas em Story, com Gatorade laranja." href="img/story/oferta-duas-colunas.webp" target="_blank" rel="noopener">Story</a><a data-model-empty data-width="450" data-height="800" data-alt="Modelo Oferta · Duas colunas vazio, sem produto." href="img/vazio/oferta-duas-colunas.webp" target="_blank" rel="noopener">Vazio</a></div></div>
-            </figcaption>
-          </figure>
-          <figure class="model-card" data-model-id="destaque-preco">
-            <a class="model-frame" data-model-preview href="img/feed/destaque-preco.webp" target="_blank" rel="noopener" aria-label="Ampliar Destaque · Preço">
-              <img src="img/feed/destaque-preco.webp" width="720" height="900" loading="lazy" decoding="async" alt="Arte Destaque · Preço em feed, com Doritos.">
-            </a>
-            <figcaption>
-              <h3>Destaque · Preço</h3><p>O produto no centro e a etiqueta de preço bem legível.</p>
-              <div class="model-meta"><span>Arte pronta</span><div class="model-formats"><a data-model-feed data-width="720" data-height="900" data-alt="Arte Destaque · Preço em feed, com Doritos." href="img/feed/destaque-preco.webp" target="_blank" rel="noopener">Feed</a><a data-model-story data-width="450" data-height="800" data-alt="Arte Destaque · Preço em Story, com Doritos." href="img/story/destaque-preco.webp" target="_blank" rel="noopener">Story</a><a data-model-empty data-width="450" data-height="800" data-alt="Modelo Destaque · Preço vazio, sem produto." href="img/vazio/destaque-preco.webp" target="_blank" rel="noopener">Vazio</a></div></div>
-            </figcaption>
-          </figure>
-          <figure class="model-card" data-model-id="servico-encomendas">
-            <a class="model-frame" data-model-preview href="img/feed/servico-encomendas.webp" target="_blank" rel="noopener" aria-label="Ampliar Serviço · Encomendas">
-              <img src="img/feed/servico-encomendas.webp" width="720" height="900" loading="lazy" decoding="async" alt="Arte Serviço · Encomendas em feed, com hortifruti.">
-            </a>
-            <figcaption>
-              <h3>Serviço · Encomendas</h3><p>O que a loja faz por encomenda, com prazo e forma de entrega.</p>
-              <div class="model-meta"><span>Arte pronta</span><div class="model-formats"><a data-model-feed data-width="720" data-height="900" data-alt="Arte Serviço · Encomendas em feed, com hortifruti." href="img/feed/servico-encomendas.webp" target="_blank" rel="noopener">Feed</a><a data-model-story data-width="450" data-height="800" data-alt="Arte Serviço · Encomendas em Story, com hortifruti." href="img/story/servico-encomendas.webp" target="_blank" rel="noopener">Story</a><a data-model-empty data-width="450" data-height="800" data-alt="Modelo Serviço · Encomendas vazio, sem produto." href="img/vazio/servico-encomendas.webp" target="_blank" rel="noopener">Vazio</a></div></div>
-            </figcaption>
-          </figure>
-        </div>
-        <p class="small" style="margin-top:20px"><a class="text-link" href="https://draftmoor.online/" rel="noopener">Conhecer o Draftmoor</a></p>
       </div>
     </section>
 
-    <section class="store split" id="loja" aria-labelledby="h-loja"><div class="wrap split-grid">
-      <div class="split-aside"><div class="section-heading"><h2 id="h-loja">Um link da loja.<br>O pedido no WhatsApp.</h2><p>No Draftmoor o cliente escolhe os produtos na vitrine, monta o carrinho e manda o pedido organizado, sem fazer cadastro.</p></div></div>
-      <div class="store-content"><figure class="store-example"><a href="img/loja-demo.webp" target="_blank" rel="noopener" aria-label="Ampliar a vitrine do Draftmoor"><img src="img/loja-demo.webp" width="780" height="1688" loading="lazy" decoding="async" alt="Vitrine do Draftmoor no celular, com catálogo de demonstração do Empório Maná."></a><figcaption>Vitrine do Draftmoor com produtos e preços de demonstração.</figcaption></figure><div class="store-facts"><div><h3>Catálogo no link</h3><p>Fotos, preços e a identidade da loja, num endereço próprio.</p></div><div><h3>Entrega ou retirada</h3><p>O cliente vê os horários e diz como prefere receber.</p></div><div><h3>Pedido organizado</h3><p>Os itens chegam no WhatsApp da loja, prontos para confirmar.</p></div><div><h3>Pix e PDF</h3><p>A chave Pix fica na tela e o catálogo sai em PDF com botão de pedir.</p></div></div></div>
-    </div></section>
-
-    <section class="store split" id="projetos" aria-labelledby="h-projetos"><div class="wrap split-grid">
-      <div class="split-aside"><div class="section-heading"><h2 id="h-projetos">Outros projetos.</h2><p>Faço e mantenho cada um, do banco de dados à tela do celular de quem usa.</p></div></div>
-      <div class="store-facts split-body">
-        <div><h3>Boardon: plaquinha com QR Code</h3><p>O cliente aponta a câmera para o QR Code no balcão e abre o Pix, o Wi-Fi, a avaliação no Google, o Instagram e o WhatsApp da loja. O que muda no painel aparece na hora, e o adesivo sai pronto para a gráfica.</p></div>
-        <div><h3>Boostham</h3><p>Lê o resultado das campanhas na Meta e as novidades do Newsroom e manda por e-mail o que mudou e onde vale pôr o dinheiro, para quem impulsiona post com pouca verba. Sem bot e sem seguidor comprado.</p></div>
+    <section class="pf-secao" id="servicos" aria-labelledby="h-servicos">
+      <div class="wrap">
+        <div class="pf-cabeca"><h2 id="h-servicos">Sob medida</h2><p class="apoio">Você me conta o problema e eu entrego funcionando. O código fica com você.</p></div>
+        <div class="pf-frentes">
+          <div><h3>Vender</h3><ul><li>Landing page e site rápido, feito para aparecer no Google</li><li>Loja online com pedido pelo WhatsApp e Pix</li><li>Arte de oferta saindo do catálogo</li></ul></div>
+          <div><h3>Integrar</h3><ul><li>WhatsApp, Instagram e Facebook pelas APIs oficiais da Meta</li><li>Ligação entre sistemas: ERP, banco e portal</li><li>Login com Google, painel e relatório</li></ul></div>
+          <div><h3>Automatizar</h3><ul><li>Planilha, cadastro e tarefa repetitiva</li><li>Coleta e organização de dados de sites</li><li>Extensão para Chrome</li><li>Bot de Telegram ou Discord</li></ul></div>
+        </div>
       </div>
-    </div></section>
-
-    <section class="how wrap" id="como" aria-labelledby="h-como">
-      <div class="section-heading"><h2 id="h-como">Do problema ao sistema no ar.</h2><p>Você cuida da loja. Eu cuido da parte técnica e de deixar funcionando.</p></div>
-      <ol class="steps"><li><strong>Conte o problema</strong><span>Pelo WhatsApp, do jeito que acontece hoje na loja: o que toma tempo, o que se perde, o que o cliente pede.</span></li><li><strong>Receba prazo e valor</strong><span>Respondo com o que vou fazer, quanto custa e quando fica pronto.</span></li><li><strong>Acompanhe a entrega</strong><span>Você testa no celular antes de abrir para os clientes e pede os ajustes.</span></li><li><strong>Fique com o código</strong><span>O sistema é seu, e o código fica com você.</span></li></ol>
     </section>
 
-    <section class="store split" id="servicos" aria-labelledby="h-servicos"><div class="wrap split-grid">
-      <div class="split-aside"><div class="section-heading"><h2 id="h-servicos">Sob medida.</h2><p>O que eu faço com mais frequência para o comércio.</p></div></div>
-      <div class="store-facts split-body">
-        <div><h3>Vender</h3><p>Landing page e site rápido, feito para aparecer no Google. Loja online com pedido pelo WhatsApp e Pix. Arte de oferta saindo do catálogo.</p></div>
-        <div><h3>Integrar</h3><p>WhatsApp, Instagram e Facebook pelas APIs oficiais da Meta. API entre sistemas, como ERP, banco e portal. Login com Google, painel e relatório.</p></div>
-        <div><h3>Automatizar</h3><p>Planilha, cadastro e tarefa repetitiva. Coleta e organização de dados de sites. Extensão para Chrome e bot de Telegram ou Discord.</p></div>
+    <section class="pf-secao" id="como" aria-labelledby="h-como">
+      <div class="wrap">
+        <div class="pf-cabeca"><h2 id="h-como">Como eu trabalho</h2><p class="apoio">Você cuida da loja. A parte técnica é comigo.</p></div>
+        <ol class="pf-passos">
+          <li><strong>Conte o problema</strong><span>Pelo WhatsApp, do jeito que acontece hoje: o que toma tempo, o que se perde, o que o cliente pede.</span></li>
+          <li><strong>Receba prazo e valor</strong><span>Respondo com o que vou fazer, quanto custa e quando fica pronto.</span></li>
+          <li><strong>Teste no celular</strong><span>Você usa antes de abrir para os clientes e pede os ajustes.</span></li>
+          <li><strong>Fique com o sistema</strong><span>No ar e funcionando, com o código seu.</span></li>
+        </ol>
       </div>
-    </div></section>
+    </section>
 
-    <section class="faq split" id="carreira" aria-labelledby="h-carreira"><div class="wrap split-grid"><div class="section-heading"><h2 id="h-carreira">Carreira.</h2><p>Comecei no front-end e fui para o back-end construindo APIs.</p></div><div class="faq-list accordion split-body">
-      <details open><summary>Hoje: produtos próprios e projetos sob medida</summary><p>Draftmoor, Boardon e Boostham, feitos e mantidos por mim.</p></details>
-      <details><summary>C# e Vue: login único e exportação de dados</summary><p>API de login único (SSO) e integrações de exportação de dados.</p></details>
-      <details><summary>Dados de ERP: análise com drill-down</summary><p>Ferramenta de análise de dados de ERP. Foi ali que vi de perto onde os sistemas travam.</p></details>
-      <details><summary>Primeiro emprego: full stack</summary><p>Angular, TypeScript e C#.</p></details>
-    </div></div></section>
+    <section class="pf-secao" id="carreira" aria-labelledby="h-carreira">
+      <div class="wrap">
+        <div class="pf-cabeca"><h2 id="h-carreira">Carreira</h2><p class="apoio">Comecei no front-end e fui para o back-end construindo APIs.</p></div>
+        <ol class="pf-tempo">
+          <li><span class="meta">Hoje</span><p><b>Produtos próprios e projetos sob medida.</b> <span class="apoio">Draftmoor, Boardon e Boostham.</span></p></li>
+          <li><span class="meta">Integrações</span><p><b>API de login único (SSO) e exportação de dados.</b> <span class="apoio">C# no back-end e Vue no front.</span></p></li>
+          <li><span class="meta">Dados de ERP</span><p><b>Ferramenta de análise com drill-down.</b> <span class="apoio">Foi ali que vi de perto onde os sistemas travam.</span></p></li>
+          <li><span class="meta">Primeiro emprego</span><p><b>Full stack com Angular, TypeScript e C#.</b></p></li>
+        </ol>
+      </div>
+    </section>
 
-    <section class="faq split" id="duvidas" aria-labelledby="h-duvidas"><div class="wrap split-grid"><div class="section-heading"><h2 id="h-duvidas">Antes de começar.</h2><p>Outra dúvida? Escreva para <a href="mailto:contatodraftmoor@gmail.com">contatodraftmoor@gmail.com</a>.</p></div><div class="faq-list accordion split-body">
-      <details><summary>Como peço um orçamento?</summary><p>Mande uma mensagem no WhatsApp contando o problema. Eu respondo com prazo e valor.</p></details>
-      <details><summary>O código fica comigo?</summary><p>Sim. O código fica com você.</p></details>
-      <details><summary>Preciso entender de programação?</summary><p>Não. Você explica como a loja funciona e testa no celular. A parte técnica é comigo.</p></details>
-      <details><summary>Quero usar o Draftmoor na minha loja.</summary><p>Conheça em <a href="https://draftmoor.online/" rel="noopener">draftmoor.online</a> ou me chame no WhatsApp.</p></details>
-    </div></div></section>
-
-    <section class="closing" aria-labelledby="h-fim"><div class="wrap closing-row"><div class="closing-text"><h2 id="h-fim">Tem um projeto<br>para a sua loja?</h2><p>Me conta o que você precisa. Eu respondo com prazo e valor.</p></div><div class="closing-action"><a class="btn btn-accent" data-variant="secondary" href="https://wa.me/5562998720156?text=Ol%C3%A1%2C%20Paulo.%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto." rel="noopener">Conversar no WhatsApp</a><a class="btn btn-ghost-dark" data-variant="ghost" href="mailto:contatodraftmoor@gmail.com">contatodraftmoor@gmail.com</a></div></div></section>
+    <section class="pf-secao" id="duvidas" aria-labelledby="h-duvidas">
+      <div class="wrap pf-duvidas">
+        <div class="pf-cabeca" style="display:block;margin:0"><h2 id="h-duvidas">Dúvidas</h2><p class="apoio" style="margin-top:12px">Outra pergunta? Escreva para <a href="mailto:contatodraftmoor@gmail.com">contatodraftmoor@gmail.com</a>.</p></div>
+        <div class="accordion">
+          <details><summary>Como peço um orçamento?</summary><p>Mande uma mensagem no WhatsApp contando o problema. Eu respondo com prazo e valor.</p></details>
+          <details><summary>O código fica comigo?</summary><p>Sim. O sistema é seu, e o código fica com você.</p></details>
+          <details><summary>Preciso entender de programação?</summary><p>Não. Você explica como a loja funciona e testa no celular.</p></details>
+          <details><summary>Quero usar o Draftmoor na minha loja.</summary><p>Veja a página em <a href="https://draftmoor.online/" rel="noopener">draftmoor.online</a> ou me chame no WhatsApp.</p></details>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="foot"><div class="wrap foot-row"><a class="wordmark small-mark" href="/">Paulo Rodrigues<span class="wordmark-dot" aria-hidden="true">.</span></a><nav class="legal-links" aria-label="Links"><a href="https://github.com/prod455" rel="noopener">GitHub</a><a href="https://draftmoor.online/" rel="noopener">Draftmoor</a><a href="mailto:contatodraftmoor@gmail.com">Contato</a></nav><p class="small">Goiânia, GO</p></div></footer>
+
+  <section class="pf-contato" aria-labelledby="h-contato">
+    <div class="wrap">
+      <h2 id="h-contato">Tem um projeto para a sua loja?</h2>
+      <p>Me conta o que você precisa. Eu respondo com prazo e valor.</p>
+      <div class="pf-acoes">
+        <a class="btn" data-variant="primary" href="https://wa.me/5562998720156?text=Ol%C3%A1%2C%20Paulo.%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto." rel="noopener">Conversar no WhatsApp</a>
+        <a class="btn" data-variant="outline" href="mailto:contatodraftmoor@gmail.com">Mandar e-mail</a>
+      </div>
+    </div>
+  </section>
+  <footer class="pf-rodape"><div class="wrap"><span>Paulo Rodrigues · Goiânia, GO</span><span><a href="https://github.com/prod455" rel="noopener">GitHub</a><a href="https://draftmoor.online/" rel="noopener">Draftmoor</a></span></div></footer>
 </body>
 </html>
