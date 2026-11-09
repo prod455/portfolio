@@ -52,12 +52,20 @@
 @media (max-width: 860px) { .pf-produto { grid-template-columns: 1fr; gap: var(--space-6); } .pf-dupla { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .pf-tiras { grid-template-columns: repeat(5, 46%); overflow-x: auto; scroll-snap-type: x mandatory; } .pf-tiras img { scroll-snap-align: start; } }
 
-/* Serviços */
+/* Frentes */
 .pf-frentes { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); }
 .pf-frentes h3 { font-size: var(--font-size-xl); padding-bottom: var(--space-3); margin-bottom: var(--space-2); border-bottom: 2px solid var(--color-ink); }
 .pf-frentes ul { list-style: none; margin: 0; padding: 0; }
 .pf-frentes li { padding-block: var(--space-3); border-bottom: 1px solid var(--color-line); color: var(--color-ink-soft); }
 @media (max-width: 760px) { .pf-frentes { grid-template-columns: 1fr; gap: var(--space-8); } }
+
+/* Já fiz */
+.pf-servicos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+.pf-servicos li { background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--radius-lg); padding: var(--space-5); }
+.pf-servicos h3 { font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-2); }
+.pf-servicos .apoio { font-size: var(--font-size-sm); }
+@media (max-width: 960px) { .pf-servicos { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .pf-servicos { grid-template-columns: 1fr; } }
 
 /* Passos */
 .pf-passos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); counter-reset: passo; }
@@ -76,11 +84,13 @@
 @media (max-width: 560px) { .pf-tempo li { grid-template-columns: 1fr; gap: var(--space-1); } }
 
 /* Dúvidas */
-.pf-duvidas { display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--space-8); }
+.pf-duvidas { display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--space-8); align-items: start; }
+.pf-duvidas h2 { font-size: clamp(28px, 3.6vw, 40px); }
+.pf-duvidas > div:first-child { position: sticky; top: calc(var(--size-header, 64px) + 24px); }
 .pf-duvidas details { border-bottom: 1px solid var(--color-line); }
 .pf-duvidas summary { padding-block: var(--space-4); font-weight: var(--font-weight-semibold); }
 .pf-duvidas details p { padding-bottom: var(--space-4); color: var(--color-ink-soft); }
-@media (max-width: 760px) { .pf-duvidas { grid-template-columns: 1fr; gap: var(--space-4); } }
+@media (max-width: 760px) { .pf-duvidas { grid-template-columns: 1fr; gap: var(--space-6); } .pf-duvidas > div:first-child { position: static; } }
 
 /* Contato */
 .pf-contato { background: var(--color-brand); color: var(--color-on-dark, #eef4f0); padding-block: var(--space-16); }
